@@ -1,0 +1,109 @@
+{
+  "name": "NBIM Investment Theme",
+  "dataColors": [
+    "#003366",
+    "#0066cc",
+    "#3399ff",
+    "#66b2ff",
+    "#99ccff",
+    "#b3d9ff",
+    "#1a5276",
+    "#2e86c1",
+    "#5dade2",
+    "#85c1e9"
+  ],
+  "background": "#0d1117",
+  "foreground": "#ffffff",
+  "tableAccent": "#0066cc",
+  "good": "#2ea043",
+  "neutral": "#8b949e",
+  "bad": "#f85149",
+  "maximum": "#003366",
+  "center": "#3399ff",
+  "minimum": "#b3d9ff",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#161b22"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "outlineColor": [
+          {
+            "color": {
+              "solid": {
+                "color": "#30363d"
+              }
+            }
+          }
+        ],
+        "foreground": [
+          {
+            "color": {
+              "solid": {
+                "color": "#e6edf3"
+              }
+            }
+          }
+        ],
+        "border": [
+          {
+            "color": {
+              "solid": {
+                "color": "#30363d"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#0d1117"
+              }
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    },
+    "card": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#161b22"
+              }
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    },
+    "slicer": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#161b22"
+              }
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    }
+  }
+}
