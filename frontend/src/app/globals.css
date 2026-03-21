@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-card: #1e293b;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --accent: #f97316;
+  --accent-hover: #ea580c;
+  --accent-light: #fdba74;
+  --border: #334155;
+  --success: #22c55e;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.recipe-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.recipe-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(249, 115, 22, 0.15);
+}
+
+.chat-bubble {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #f97316, #fdba74);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-secondary); }
