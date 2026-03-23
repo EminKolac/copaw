@@ -5,7 +5,14 @@ import os
 from pathlib import Path
 from typing import Optional
 
-DB_PATH = Path(__file__).parent.parent / "copaw.db"
+def _resolve_db_path() -> Path:
+    """Use /tmp on Vercel serverless, project root otherwise."""
+    if os.environ.get("VERCEL"):
+        return Path("/tmp/copaw.db")
+    return Path(__file__).parent.parent / "copaw.db"
+
+
+DB_PATH = _resolve_db_path()
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS categories (
